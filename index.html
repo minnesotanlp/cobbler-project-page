@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="cobbler">
+  <meta property="og:title" content="cobbler"/>
+  <meta property="og:description" content="Benchmarking Cognitive Biases in Large Language Models as Evaluators"/>
+  <meta property="og:url" content=""/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Benchmarking Cognitive Biases in Large Language Models as Evaluators</title>
+  <link rel="icon" type="image/x-icon" href="static/images/mnfavicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Benchmarking Cognitive Biases in Large Language Models as Evaluators</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://kooryan.netlify.app/" target="_blank">Ryan Koo</a><sup>#</sup>,</span>
+                <span class="author-block">
+                  <a href="https://mimn97.github.io/" target="_blank">Minhwa Lee</a><sup>#</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://vipulraheja.github.io/" target="_blank">Vipul Raheja</a><sup>*</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://jong-inn.github.io/about/" target="_blank">Jong Inn Park</a><sup>#</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://zaemyung.github.io/" target="_blank">Zae Myung Kim</a><sup>#</sup>,</span>                                                            
+                  <span class="author-block">
+                    <a href="https://dykang.github.com/" target="_blank">Dongyeop Kang</a><sup>#</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">University of Minnesota Twin Cities<sup>#</sup>, Grammarly<sup>*</sup><br>Arxiv, 2023</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2309.17012.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/minnesotanlp/cobbler" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Github</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2309.17012" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Abstract</span>
+                </a>
+              </span>
+
+              <!-- Supplementary PDF link -->
+              <span class="link-block">
+                  <a href="https://minnesotanlp.github.io/cobbler/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fa fa-laptop"></i>
+                  </span>
+                  <span>Link to Demo & Data</span>
+                </a>
+              </span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        Your video here
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large Language Models (LLMs) have recently been shown to be effective as automatic evaluators with simple prompting and in-context learning. In this work, we assemble 15 LLMs of four different size ranges and evaluate their output responses by preference ranking from the other LLMs as evaluators, such as System Star is better than System Square. 
+            We then evaluate the quality of ranking outputs introducing the Cognitive Bias Benchmark for LLMs as Evaluators <b>(CoBBLEr)</b>, a benchmark to measure six different cognitive biases in LLM evaluation outputs, such as the Egocentric bias where a model prefers to rank its own outputs highly in evaluation. 
+            We find that LLMs are biased text quality evaluators, exhibiting strong indications on our bias benchmark (average of 40% of comparisons across all models) within each of their evaluations that question their robustness as evaluators. Furthermore, we examine the correlation between human and machine preferences and calculate the average Rank-Biased Overlap (RBO) score to be 49.6%, indicating that machine preferences are misaligned with humans. 
+            According to our findings, LLMs may still be unable to be utilized for automatic annotation aligned with human preferences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered;">
+      <h1 class="title is-3">Our CoBBLEr Pipeline</h1>
+    </div> 
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="item">
+            <br>
+            <img src="static/images/bias-bench-pipeline-v2.jpg" alt="cobbler pipeline"/>
+            <!-- <p class="subtitle has-text-centered">
+              First image description.
+            </p> -->
+          </div>
+          <div class="content has-text-justified">
+            <br>
+            <p>
+            We propose CoBBLEr, the <b>CO</b>gnitive <b>B</b>ias <b>B</b>enchmark for evaluating the quality and reliability of <b>L</b>LMs as <b>E</b>valuato<b>R</b>s. Here is the pipeline: 
+            <ol>
+              <li> 
+                <b style="color: slateblue">Dataset and Models </b> 
+                <p> We collect a set of 50 question-answering instructions from BigBench (Srivastava et al., 2023) and Eli5 (Fan et al., 2019). </p> 
+                <p>Then, we assemble top 15 models that are open- and closed-source LLMs 
+                  (GPT-4, ChatGPT, InstructGPT, LLaMAv2, LLaMA, Cohere, Falcon, Alpaca, Vicuna, OpenAssist, DollyV2, Baize, Koala, WizardLM, MPT, RedPajama).</p>
+              </li>
+              <br>
+              <li>
+                <b style="color: slateblue">Response Generation </b>
+                <p>We then generate responses from 15 open- and closed-source LLMs and conduct a round-robin over every possible unique pair between each of the model responses, prompting each model to evaluate its own and other models’ responses.</p>
+              </li>
+              <br>
+              <li>
+                <b style="color: slateblue">Pairwise Evaluation</b>
+                <p>
+                  We then test six different biases to benchmark their evaluation quality and categorize the model biases into two groups: (1) Implicit Biases, which can be implicitly extracted from each model’s evaluation via a vanilla prompt, and (2) Induced Biases, which add modifications to the original prompts akin to induce negative behaviors. 
+                </p>
+              </li>
+            </ol>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered;">
+      <h1 class="title is-3">Main Findings</h1>
+    </div> 
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <br>
+          <div class="columns is-centered has-text-centered;">
+            <h1 class="title is-3">(1) Definition of Biases in CoBBLEr</h1>
+          </div> 
+          <div class="item">
+            <br>
+            <img src="static/images/bias_def.jpg" alt="cobbler pipeline"/>
+            <!-- <p class="subtitle has-text-centered">
+              First image description.
+            </p> -->
+          </div>
+          <div class="content has-text-justified">
+            <br>
+            <p>Definition and examples of each bias type in CoBBLEr. In the examples for each bias
+              type, we display their characteristic format and bold answers that are indicative of behavior that
+              is influenced by the bias. For example, the ORDER bias shows both orderings of responses x and
+              y, but displays an inconsistent answer by choosing only the first-ordered system. Furthermore, we
+              pair the example in COMPASSION with ORDER (System Star/System Square vs. Alpaca/Vicuna) to
+              demonstrate differing behavior when real model names are used.</p>
+          </div>
+          <br>
+          <div class="columns is-centered has-text-centered;">
+            <h1 class="title is-3">(2) Overall Bias Scores by Models and Size</h1>
+          </div> 
+          <div class="item">
+            <br>
+            <img src="static/images/jitter-biasbench.jpg" alt="cobbler pipeline"/>
+            <!-- <p class="subtitle has-text-centered">
+              First image description.
+            </p> -->
+          </div>
+          <div class="content has-text-justified">
+            <br>
+            <p>We show proportion of responses that were labeled bias for each bias benchmark. We visualize the distribution of the 15 models tested that varies by the y-axis. 
+              The red dashed line indicates the RANDOM threshold for each bias benchmark that serves as a litmus between biased and unbiased LMs-as-evaluators. 
+              The spread on the x-axis is randomly distributed for visual clarity.</p>
+            <ol>
+              <li>Order Bias: the majority of models tend to prefer the first-order response, especially the models of size greater than 40B parameters. </li>
+              <li>Compassion Bias: all models were influenced by real model names in evaluation settings, especially for those with 100B parameters or greater.</li>
+              <li>Egocentric Bias: The models of size less than than 10B generally tend to prefer their own responses regardless of text quality, compared to anonymized aliases. </li>
+              <li>Salience Bias: Larger models (>100B and >40B) are drawn more strongly to longer responses, compared to smaller models.</li>
+              <li>Bandwagon Effect: The majority of models were heavily influenced by a simple fake statistics, regardless of text quality. </li>
+              <li>Attentional Bias: Around half of models were influenced by irrelevant information that distracts models when evaluating text quality.</li>
+            </ol>
+          </div>
+        </div>
+        </div>
+        <!-- <br>
+        <div class="columns is-centered has-text-centered;">
+          <h1 class="title is-3">(3)</h1>
+        </div> 
+        <div class="image-container">
+          <img src="static/images/intensity-polygon.jpg" alt="Image 1">
+          <img src="static/images/mainplot.jpg" alt="Image 2">
+        </div>
+        <div class="content has-text-justified">
+          <br>
+          <p>(Left) We show the proportion of biased responses for each evaluator relative to the random threshold. We scale each of the axes to the score of the most biased model.
+            The polygon plot indicates that the majority of models strongly exhibit several of the different biases, which could compromise the credibility of them as evaluators. 
+          </p>
+          <p>(Right) Overview of performance across all of the bias benchmarks categorized into 4 size groups.  
+            The red-dotted line denotes the average threshold taken from the calculated RANDOM in which the average scores were taken by summing their bias scores and then
+            taking their average. 
+            The plot shows that the induced biases (Bandwagon effect and Attentional Bias) contribute to almost half of their average bias score. 
+            Also, the implicit biases contribute similarly to each model's overall bias scores, so scaling up model size does not reduce the biases in LLM evaluators. </p>
+        </div> -->
+      </div>
+      <br>
+      <div class="columns is-centered has-text-centered;">
+      </div> 
+      <div class="image-container">
+        <img src="static/images/intensity-polygon.jpg" alt="Image 1">
+        <img src="static/images/mainplot.jpg" alt="Image 2">
+      </div>
+      <div class="content has-text-justified">
+        <br>
+        <p>(Left) We show the proportion of biased responses for each evaluator relative to the random threshold. We scale each of the axes to the score of the most biased model.
+          The polygon plot indicates that the majority of models strongly exhibit several of the different biases, which could compromise the credibility of them as evaluators. 
+        </p>
+        <p>(Right) Overview of performance across all of the bias benchmarks categorized into 4 size groups.  
+          The red-dotted line denotes the average threshold taken from the calculated RANDOM in which the average scores were taken by summing their bias scores and then
+          taking their average. 
+          The plot shows that the induced biases (Bandwagon effect and Attentional Bias) contribute to almost half of their average bias score. 
+          Also, the implicit biases contribute similarly to each model's overall bias scores, so scaling up model size does not reduce the biases in LLM evaluators. </p>
+      </div>     
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered;">
+      <h1 class="title is-3">Main Findings</h1>
+    </div> 
+    <div class="container is-max-desktop">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="static/images/jitter-biasbench.jpg" alt="jitter"/>
+        <p class="subtitle has-text-centered" style="font-size: large;">
+          We show proportion of responses that were labeled bias for each bias benchmark. We visualize the distribution of the 15 models tested that varies by the y-axis. 
+          The red dashed line indicates the RANDOM threshold for each bias benchmark that serves as a litmus between biased and unbiased LMs-as-evaluators. 
+          The spread on the x-axis is randomly distributed for visual clarity.
+        </p>
+      </div>
+      <div class="item">
+        <img src="static/images/intensity-polygon.jpg" alt="polygon"/>
+        <p class="subtitle has-text-centered" style="font-size: large;">
+          We show the proportion of biased responses for each evaluator relative to the random threshold. We scale each of the axes to the score of the most biased model.  
+        </p>
+      </div>
+      <div class="item">
+        <img src="static/images/mainplot.jpg" alt="bar"/>
+        <p class="subtitle has-text-centered" style="font-size: large;">
+          Overview of performance across all of the bias benchmarks categorized into 4 size groups.  
+          The red-dotted line denotes the average threshold taken from the calculated
+          RANDOM in which the average scores were taken by summing their bias scores and then
+          taking their average.
+        </p>
+     </div>
+     <div class="item">
+     <img src="static/images/bias_def.jpg" alt="bias-def"/>
+      <p class="subtitle has-text-centered" style="font-size: large;">
+        Definition and examples of each bias type in CoBBLEr. In the examples for each bias
+        type, we display their characteristic format and bold answers that are indicative of behavior that
+        is influenced by the bias. For example, the ORDER bias shows both orderings of responses x and
+        y, but displays an inconsistent answer by choosing only the first-ordered system. Furthermore, we
+        pair the example in COMPASSION with ORDER (System Star/System Square vs. Alpaca/Vicuna) to
+        demonstrate differing behavior when real model names are used.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+
+
+<section class="hero is-small is-light">
+<div class="hero-body">
+  <div class="columns is-centered has-text-centered;">
+    <h4 style="font-size: x-large; color: tomato;">Check Our Demo to see the N-wise ranking evaluation by each of 15 LLMs and human annotators as well!</h4>
+  </div>
+  <br>
+<span class="link-block; columns is-centered has-text-centered">
+  <a href="https://minnesotanlp.github.io/cobbler/" target="_blank"
+  class="external-link button is-normal is-rounded is-link is-light">
+  <span class="icon">
+    <i class="fa fa-laptop"></i>
+  </span>
+  <span>Demo (Experiment Viewer)</span>
+</a>
+</span>
+</div>
+</section>
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Citation</h2>
+      <pre><code>@misc{koo2023benchmarking,
+        title={Benchmarking Cognitive Biases in Large Language Models as Evaluators}, 
+        author={Ryan Koo and Minhwa Lee and Vipul Raheja and Jong Inn Park and Zae Myung Kim and Dongyeop Kang},
+        year={2023},
+        eprint={2309.17012},
+        archivePrefix={arXiv},
+        primaryClass={cs.CL}
+  }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page template is borrowed from <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">here</a>.
+            <!-- This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. -->
+            <!-- You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br>  -->
+            This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- <script>
+    // JavaScript to handle the button click event
+    var downloadLink = document.getElementById('downloadLink');
+    downloadLink.addEventListener('click', function (e) {
+        // Prevent the default behavior of the link (opening in a new tab)
+        e.preventDefault();
+
+        // Replace 'YOUR_JSON_FILE_URL' with the actual URL of your JSON file on GitHub
+        var jsonFileUrl = 'https://mimn97.github.io/cobbler-webpage/data.json';
+
+        // Create an anchor element for downloading
+        var link = document.createElement('a');
+        link.href = jsonFileUrl;
+
+        // Set the download attribute to specify the file name
+        link.download = 'your_file.json';
+
+        // Simulate a click event to trigger the download
+        link.click();
+    });
+  </script> -->
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
